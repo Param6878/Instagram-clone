@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* -------------------------------------------------------home----------------------------------------------- */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main_container {
+    /* border: 2px solid; */
+    height: 100vh;
+}
+
+/*.............left_container...........*/
+
+.left_container {
+    /* border: 2px solid red; */
+    background-color: aliceblue;
+    width: 16%;
+    height: 100vh;
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif, arial;
+    font-weight: 500;
+    font-size: 18px;
+    position: fixed;
+}
+
+.media_icon {
+    display: none;
+}
+
+.left_con_logo {
+    /* border: 2px solid; */
+    padding: 0px 19px;
+
+}
+
+.insta_logo {
+    width: 134px;
+}
+
+.left_options {
+    /* border: 2px solid; */
+    height: 78%;
+}
+
+.options_tit {
+    /* border: 2px rebeccapurple; */
+    margin-left: 4px;
+    margin-left: 15px;
+}
+
+.items {
+    /* border: 2px solid; */
+    margin: 5px 7px;
+    padding: 14px 10px;
+    border-radius: 4px;
+
+}
+
+.btn{
+    text-align: left;
+    width: 180px;
+    height: 27px;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+
+.btn span{
+    font-weight: 500;
+}
+
+
+.items:hover {
+    background-color: rgb(197, 226, 251);
+
+}
+
+.left_more_options {
+    /* border: 2px solid; */
+    height: 22px;
+    margin: 6px 0;
+    padding: 14px 20px;
+    border-radius: 4px;
+
+}
+
+.left_more_options:hover {
+    background-color: rgb(197, 226, 251);
+
+}
+
+/*......................main_container...........*/
+.main {
+    /* border: 2px solid; */
+    width: 100%;
+    padding: 40px;
+
+}
+
+
+
+.container {
+
+    /* width: 100%;
+    border: 2px solid; */
+
+    width: 80%;
+    /* border: 2px solid; */
+    margin-left: 283px;
+
+
+}
+
+.status_wrappe {
+    width: 97%;
+    height: 120px;
+    background-color: aliceblue;
+    padding: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* border: 2px solid red; */
+}
+
+.status_wrappe::-webkit-scrollbar {
+    display: none;
+}
+
+.status_card {
+
+    flex: 0 0 auto;
+    width: 80px;
+}
+
+.profile {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, rgb(225, 230, 0), rgb(255, 0, 128)80%);
+}
+
+
+
+.profile img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #afff;
+
+}
+
+.username {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*----------------post----------------*/
+
+.post {
+    /* width: 100%;
+    height: 100%;
+    background: aliceblue;
+    border: 2px solid red;
+    margin-top: 10px; */
+
+    width: 90%;
+    margin-left: 23px;
+    height: 100%;
+    background: aliceblue;
+    /* border: 2px solid red; */
+    margin: 10px auto;
+
+}
+
+.info {
+    width: 93%;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.info .username {
+    width: auto;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.info .option {
+    height: 10px;
+    cursor: pointer;
+}
+
+.info .profile {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: none;
+}
+
+.info .profile img {
+    border: none;
+}
+
+.post-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.post-content {
+    width: 100%;
+    padding: 16px;
+}
+
+.likes {
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.description span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.post-time {
+    font-size: 12px;
+}
+
+.comment-wr {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #dfdfdf; */
+
+}
+
+.comment-wr .icon {
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.comment-box {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: aliceblue;
+}
+
+.comment-btn {
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: (0, 162, 225);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.reaction {
+    width: 100%;
+    height: 50px;
+    margin-top: -20px;
+}
+
+.reaction .icon {
+    height: 25px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+
+
+/*...........right_container...................*/
+
+.right_con {
+    /* border: 2px solid pink; */
+    background-color: aliceblue;
+    height: 10%;
+
+}
+
+.account {
+    width: 100%;
+    height: 100px;
+
+}
+
+.account .profile {
+    width: 34%;
+    height: 58px;
+    background: none;
+
+}
+
+.account .profile img {
+    border: none;
+}
+
+.account .username {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.account .switch {
+    margin-right: 10px;
+
+}
+
+.account .switch button {
+    border: none;
+    background: none;
+    color: rgb(0, 149, 246);
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.suggest {
+    width: 82%;
+    color: #777777;
+    font-weight: 200;
+}
+
+.see-all {
+    font-size: 14px;
+
+}
+
+.sugg-acc {
+    height: 55px;
+    object-fit: cover;
+    margin-top: 13px;
+}
+
+.sugg-profile {
+    width: 16%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+.sugg-profile img {
+
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+.sugg-username {
+    width: 60%;
+    margin-left: 6px;
+
+}
+
+.sugg-user {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sugg-username .an-user {
+    font-size: 12px;
+}
+
+.sugg-switch button {
+    border: none;
+    background: none;
+    color: rgb(0, 149, 246);
+    font-family: roboto;
+    font-weight: bold;
+}
+
+/* ----------------------responsive------------------------ */
+
+@media (max-width:1100px) {
+    .right_con {
+        display: none;
+    }
+
+    .left_con {
+        width: 149%;
+        margin: 0 -80px;
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .left_con_logo {
+        display: none;
+    }
+
+    .media_icon {
+        display: block;
+        width: 70%;
+        height: 7%;
+        margin: 0 5px;
+    }
+
+
+    .left_container {
+        margin-top: 40px;
+        width: 60px;
+        height: 60%;
+
+    }
+
+    .left_options span {
+        display: none;
+
+    }
+
+    .left_more_options span {
+        display: none;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .post-img {
+        height: 310px;
+    }
+
+}
+
+
+/* ///////////////////////////////search////////////////////////// */
+
+/* .search_slid{
+    border: 1px solid rgb(228 228 228);
+    width: 400px;
+    height: 100vh;
+    margin-left: 3px;
+    border-radius: 9px;
+    position: absolute;
+    right: 40px;
+
+}
+
+h1{
+     margin: 14px 14px ;
+}
+
+input{
+    margin: 14px 14px;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(228 228 228);
+    width: 90%;
+}
+
+.result{
+    border-top: 1px solid rgb(228 228 228);;
+     height: 80%;
+}
+.result span{
+    margin: 14px 14px ;
+
+}
+
+.result-con{
+
+    height: 100%;
+}
+
+
+.btn-item:checked ~ .search_slid
+{
+    background-color:red
+
+} */
+
+
+
+
+
+

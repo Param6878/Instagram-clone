@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-clone</title>
+    <link rel="icon" href="image/instagram.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- ---------------------------left container----------------------- -->
+    <div class="main_container flex ">
+
+        <div class="left_container ">
+
+            <div class="left_con_logo">
+                <img class="insta_logo" src="image/logo1.jpg" alt="homelook">
+            </div>
+            <img class="media_icon" src="image/instagram.png" alt="logo">
+
+            <div class="left_options">
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-solid fa-house"></i><span class="options_tit">Home</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn" id="search" onclick="searchfun()">
+                        <i class="fa-solid fa-magnifying-glass"></i><span class="options_tit">Search</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-solid fa-compass"></i><span class="options_tit">Explore</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-solid fa-clapperboard"></i><span class="options_tit">Reels</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-regular fa-comment"></i><span class="options_tit">Massages</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-regular fa-heart"></i><span class="options_tit">Notification</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-regular fa-square-plus"></i><span class="options_tit">Create</span>
+                    </button>
+                </div>
+                <div class="items">
+                    <button class="btn">
+                        <i class="fa-solid fa-house"></i><span class="options_tit">Profile</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="left_more_options" id="more">
+                <button class="btn" onclick="myfun()">
+                    <i class="fa-solid fa-bars"></i><span class="options_tit">More</span>
+                </button>
+                <div class="inner_more_option" id="more_option">
+                    <div class="items-1">
+                        <button class="btn-1">
+                            <i class="fa-solid fa-gear"></i><span class="options_tit">Setting</span>
+                        </button>
+                    </div>
+
+                    <div class="items-1">
+                        <button class="btn-1">
+                            <i class="fa-solid fa-clock-rotate-left"></i><span class="options_tit">Your activity</span>
+                        </button>
+                    </div>
+
+                    <div class="items-1">
+                        <button class="btn-1">
+                            <i class="fa-solid fa-circle-exclamation"></i><span class="options_tit">Report a
+                                problem</span>
+                        </button>
+                    </div>
+                     
+                    <hr>
+
+                    <div class="items-1">
+                        <button class="btn-1">
+                           <a href="index.php"><span class="options_tit">Log out</span></a> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="search_slid" id="search_op">
+                <h1>Search</h1>
+                <input type="text" name="search" placeholder="Search">
+        
+                <div class="result flex flex_direction">
+                    <span>Recent</span>
+                    <div class="result-con flex align justify">
+                       <span>no recent searches</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- --------------main container------------------------>
+
+        <section class="main flex justify ">
+
+            <div class="container grid grid-t-c grid-g">
+
+                <!-- ------------------------status------------------------- -->
+
+                <div class="left_con flex flex_direction">
+
+                    <div class="status_wrappe flex align">
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+                        <div class="status_card flex flex_direction align">
+                            <div class="profile">
+                                <img src="image/profile.jpg" alt="">
+                            </div>
+                            <p class="username align">username</p>
+                        </div>
+
+                    </div>
+
+                    <!-- ------------------------post--------------------- -->
+
+                    <div class="post">
+                        <div class="info flex flex-sp-bt align">
+                            <div class="user flex align ">
+                                <div class="profile">
+                                    <img src="image/profile.jpg" alt="">
+                                </div>
+                                <p class="username">username</p>
+                            </div>
+                            <i class="fas fa-ellipsis-h option"></i>
+                        </div>
+                        <img src="image/post.webp" class="post-img" alt="post">
+                        <div class="post-content">
+                            <div class="reaction flex align">
+                                <i class="icon fa-regular fa-heart"></i>
+                                <i class="icon fa-regular fa-comment"></i>
+                            </div>
+                            <p class="likes">2,112 Likes</p>
+                            <p class="description"><span>username</span> My new post</p>
+                            <p class="post-time">2020/10/08</p>
+                        </div>
+
+                        <div class="comment-wr flex-sp-bt flex align">
+                            <img src="image/profile.jpg" class="icon" />
+                            <input type="text" class="comment-box" placeholder="add a comment">
+                            <button class="comment-btn">Post</button>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="info flex flex-sp-bt align">
+                            <div class="user flex align ">
+                                <div class="profile">
+                                    <img src="image/profile.jpg" alt="">
+                                </div>
+                                <p class="username">username</p>
+                            </div>
+                            <i class="fas fa-ellipsis-h option"></i>
+                        </div>
+                        <img src="image/post.webp" class="post-img" alt="post">
+                        <div class="post-content">
+                            <div class="reaction flex align">
+                                <i class="icon fa-regular fa-heart"></i>
+                                <i class="icon fa-regular fa-comment"></i>
+                            </div>
+                            <p class="likes">2,112 Likes</p>
+                            <p class="description"><span>username</span> My new post</p>
+                            <p class="post-time">2020/10/08</p>
+                        </div>
+
+                        <div class="comment-wr flex-sp-bt flex align">
+                            <img src="image/profile.jpg" class="icon" />
+                            <input type="text" class="comment-box" placeholder="add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+
+
+                        <hr>
+
+                        <div class="info flex flex-sp-bt align">
+                            <div class="user flex align ">
+                                <div class="profile">
+                                    <img src="image/profile.jpg" alt="">
+                                </div>
+                                <p class="username">username</p>
+                            </div>
+                            <i class="fas fa-ellipsis-h option"></i>
+                        </div>
+                        <img src="image/post.webp" class="post-img" alt="post">
+                        <div class="post-content">
+                            <div class="reaction flex align">
+                                <i class="icon fa-regular fa-heart"></i>
+                                <i class="icon fa-regular fa-comment"></i>
+                            </div>
+                            <p class="likes">2,112 Likes</p>
+                            <p class="description"><span>username</span> My new post</p>
+                            <p class="post-time">2020/10/08</p>
+                        </div>
+
+                        <div class="comment-wr flex-sp-bt flex align">
+                            <img src="image/profile.jpg" class="icon" />
+                            <input type="text" class="comment-box" placeholder="add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+
+
+
+                        <hr>
+
+                        <div class="info flex flex-sp-bt align">
+                            <div class="user flex align ">
+                                <div class="profile">
+                                    <img src="image/profile.jpg" alt="">
+                                </div>
+                                <p class="username">username</p>
+                            </div>
+                            <i class="fas fa-ellipsis-h option"></i>
+                        </div>
+                        <img src="image/post.webp" class="post-img" alt="post">
+                        <div class="post-content">
+                            <div class="reaction flex align">
+                                <i class="icon fa-regular fa-heart"></i>
+                                <i class="icon fa-regular fa-comment"></i>
+                            </div>
+                            <p class="likes">2,112 Likes</p>
+                            <p class="description"><span>username</span> My new post</p>
+                            <p class="post-time">2020/10/08</p>
+                        </div>
+
+                        <div class="comment-wr flex-sp-bt flex align">
+                            <img src="image/profile.jpg" class="icon" />
+                            <input type="text" class="comment-box" placeholder="add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+
+
+
+                        <hr>
+
+                        <div class="info flex flex-sp-bt align">
+                            <div class="user flex align ">
+                                <div class="profile">
+                                    <img src="image/profile.jpg" alt="">
+                                </div>
+                                <p class="username">username</p>
+                            </div>
+                            <i class="fas fa-ellipsis-h option"></i>
+                        </div>
+                        <img src="image/post.webp" class="post-img" alt="post">
+                        <div class="post-content">
+                            <div class="reaction flex align">
+                                <i class="icon fa-regular fa-heart"></i>
+                                <i class="icon fa-regular fa-comment"></i>
+                            </div>
+                            <p class="likes">2,112 Likes</p>
+                            <p class="description"><span>username</span> My new post</p>
+                            <p class="post-time">2020/10/08</p>
+                        </div>
+
+                        <div class="comment-wr flex-sp-bt flex align">
+                            <img src="image/profile.jpg" class="icon" />
+                            <input type="text" class="comment-box" placeholder="add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="right_con ">
+
+                    <!-- ----------------------user account showing---------------- -->
+
+                    <div class="account flex align justify">
+                        <div class="profile">
+                            <img src="image/profile.jpg" alt="">
+                        </div>
+                        <div class="username flex">
+                            <span>username</span>
+                        </div>
+                        <div class="switch">
+                            <button>Switch</button>
+                        </div>
+                    </div>
+
+                    <!-- --------------------suggestion title----------------- -->
+
+                    <div class="sug-container flex ">
+
+                        <div class="suggest flex flex_direction justify">
+                            <span>Suggestion for you</span>
+                        </div>
+                        <div class="see-all">
+                            <span>See All</span>
+                        </div>
+                    </div>
+
+
+                    <!-- --------------------------suggestion for following----------- -->
+
+                    <div class="sugg-acc flex align">
+                        <div class="sugg-profile">
+                            <img src="image/profile.jpg" alt="">
+                        </div>
+                        <div class="sugg-username flex flex_direction">
+                            <span class="sugg-user">username</span>
+                            <span class="an-user">Followed by another user</span>
+                        </div>
+                        <div class="sugg-switch">
+                            <button>Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="sugg-acc flex align">
+                        <div class="sugg-profile">
+                            <img src="image/profile.jpg" alt="">
+                        </div>
+                        <div class="sugg-username flex flex_direction">
+                            <span class="sugg-user">username</span>
+                            <span class="an-user">Followed by another user</span>
+                        </div>
+                        <div class="sugg-switch">
+                            <button>Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="sugg-acc flex align">
+                        <div class="sugg-profile">
+                            <img src="image/profile.jpg" alt="">
+                        </div>
+                        <div class="sugg-username flex flex_direction">
+                            <span class="sugg-user">username</span>
+                            <span class="an-user">Followed by another user</span>
+                        </div>
+                        <div class="sugg-switch">
+                            <button>Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="sugg-acc flex align">
+                        <div class="sugg-profile">
+                            <img src="image/profile.jpg" alt="">
+                        </div>
+                        <div class="sugg-username flex flex_direction">
+                            <span class="sugg-user">username</span>
+                            <span class="an-user">Followed by another user</span>
+                        </div>
+                        <div class="sugg-switch">
+                            <button>Follow</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+    <script>
+        let more = document.getElementById('more')
+       let more_option =document.getElementById('more_option')
+
+        // function myfun(){
+        //     if( more_option.style.opacity != '1'){
+        //          more_option.style.opacity = '1';
+        //     }else{
+        //         more_option.style.opacity= '0';
+        //     }
+        
+        function myfun(){
+            if( more_option.style.display != 'block'){
+                 more_option.style.display = 'block';
+            }else{
+                more_option.style.display = 'none';
+            }
+        }  
+
+
+       let search = document.getElementById('search');
+       let search_op = document.getElementById('search_op');
+
+       function searchfun(){
+        if (search_op.style.opacity != '1'){
+            search_op.style.opacity = '1'
+        }else{
+            search_op.style.opacity = '0'
+        }
+       }
+
+    </script>
+
+</body>
+
+</html>

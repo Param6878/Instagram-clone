@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+
+}
+
+.justify{
+    justify-content: center;
+}
+
+.flex-sp-bt{
+    justify-content: space-between;
+}
+
+.align{
+    align-items: center;
+}
+
+.mx_2{
+    margin: 1px 4px;
+}
+
+.flex_direction{
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-t-c{
+    grid-template-columns: 60% 27%;
+}
+
+.grid-g{
+    grid-gap: 30px;
+}
